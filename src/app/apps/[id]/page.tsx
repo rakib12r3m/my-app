@@ -1,4 +1,5 @@
 import { getAllApps } from "@/app/lib/app";
+import AppDetailsPageButton from "@/components/shared/AppDetailsPageButton";
 import { TApp } from "@/types/apps.type";
 import Image from "next/image";
 import React from "react";
@@ -82,7 +83,7 @@ const AppDetailsPage = async ({ params }: TAppDetailsProps) => {
             </div>{" "}
           </div>{" "}
           {/* Button */}{" "}
-          <button className="btn btn-primary mt-6"> Install App </button>{" "}
+          <AppDetailsPageButton app={app}/>
         </div>{" "}
       </div>{" "}
     </div>
